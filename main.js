@@ -89,17 +89,20 @@ function calculate(due, paid){
             changeOwed -= 0.05;
         }
     }
-     if(changeOwed >= 0.01){
-        while(changeOwed >= 0.01){
+    changeOwed = changeOwed.toFixed(2);
+    if(changeOwed > 0.00){
+        console.log(changeOwed);
+        while(changeOwed > 0.00){
             pennyCoins++;
             changeOwed -= 0.01;
+            
         }
     }
     if(paid < due){
         changeOwed = due - paid;
         document.getElementById("no-change").innerHTML = changeOwed;
     }
-    document.getElementById("dollars-output").innerHTML = theirAmount;
+    document.getElementById("dollars-output").innerHTML = Math.floor(theirAmount);
     document.getElementById("20-dollars-output").innerHTML = twentyBills;
     document.getElementById("10-dollars-output").innerHTML = tenBills;
     document.getElementById("5-dollars-output").innerHTML = fiveBills;
