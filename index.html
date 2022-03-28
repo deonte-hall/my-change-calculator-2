@@ -2,12 +2,91 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Change Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <title> Change Calculator</title>
   </head>
   <body>
-    <!-- Write your markup here -->
+    <h1 id="title_text">Change Calculator</h1>
+    <hr>
+    <br>
+    <p id="due_words"><h2>Amount that is due:</h2></p>
+    <input id="amount-due" type = "number" placeholder="amount due">
+    <p id="paid_words"><h2>Amount Paid:</h2></p>
+    <input id="amount-received" type = "number" placeholder = "amount paid"> 
+    <br>
+    <button type ="button" id="calculate-change" onclick = "handleClickEvent()"> Calculate </button>
+    <br>
+    <hr>
+    <h1 id="dollars-output"></h1>
+    <h1 id="no-change"></h1>
+    <br>
+   
+    <div class="all-money">
+      
+        <img src ="download.jpeg" height="100px"> 
+        <h3 id="20-dollars-output"></h3> 
+        
+      
+      
+          
+        <img src="ten.jpeg" height="100px">
+        <h3 id="10-dollars-output"></h3>
+        
+      
+      
+    
+        <img src ="five.jpeg" height="100px"> 
+        <h3 id="5-dollars-output"></h3>
+        
+      
+  
+          <img src="US_$2_bill_obverse_series_2003_A.jpeg" height="100px">
+          <h3 id="2-dollar-output"></h3>
+      
 
+  
+        <img src="dollar.jpeg" height="100px">
+        <h3 id="one-dollar-output"></h3>
+        
+      
+  
+  
+        <img src ="quarter-modified.png" height="100px"> 
+        <h3 id="quarters-output"></h3>
+        
+      
+    
+        <img src ="dime-modified.png" height="100px"> 
+        <h3 id="dimes-output"></h3>
+        
+      
+      
+
+        <img src ="nickel-modified.png" height="100px"> 
+        <h3 id="nickels-output"></h3>
+        
+      
+  
+
+        <img src ="penny-modified.png" height="100px"> 
+        <h3 id="pennies-output"></h3>
+        
+      
+
+
+
+      
+    </div>
+      
+
+    
+    
+  
+   
+
+    
     <!-- Don't forget to add your <script> tag here -->
-
+      <script src="main.js" charset="utf-8"></script>
   </body>
 </html>

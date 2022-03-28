@@ -1,8 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
 
-body{
+
+body {
     background-color: grey;
 }
-img{
+img {
     border-width: 50px;
+    margin-left: 40%;
     object-position: center;
+}
+h2 {
+    text-align: center;
+    font-family: 'Palette Mosaic', cursive;
+    font-size: large;
+}
+#title_text {
+    text-align: center;
+    font-family: 'Palette Mosaic', cursive;
+    
+}
+#amount-due {
+     margin-left: 45%;
+     margin-top: 1%;
+}
+#amount-received {
+    margin-left: 45%;
+    margin-top: 1%;
+}
+#calculate-change {
+    margin-left: 47.5%;
+    margin-top: 2%;
+}
+h3 {
+    text-align: center;
+}
+#no-change {
+    text-align: center;
+}
+#dollars-output{
+    text-align: center;
+}
+.all-money {
+    display: inline-block;
 }
